@@ -1,0 +1,75 @@
+.Wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Header-Container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.Header-Title-Container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.Header-Title-Container h1 {
+  justify-self: center;
+  font-size: 25px;
+}
+
+.Header-Back-Btn-Container {
+  justify-content: left;
+}
+
+.Header-Back-Btn-Container button {
+  border: black 1.5px solid;
+  border-radius: 4px;
+  background-color: white;
+  padding: 4px 6px;
+  font-weight: bold;
+}
+
+.Header-Title-Container, .Header-Btns-Container {
+  padding: 5px 7px;
+  border-bottom: black 2px solid;
+  background-color: white;
+}
+
+.Header-Btns-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.28);
+  align-items: stretch;
+}
+
+.Header-Btns-Container button {
+  border: black 1.5px solid;
+  border-radius: 6px;
+  background-color: white;
+  padding: 2px 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.23);
+  color: black;
+}
+
+.Home-Title {
+  display: flex;
+  justify-content: center;
+}
+
+.Wrapper-Content {
+  margin-top: 90px;
+  padding: 10px;
+}
