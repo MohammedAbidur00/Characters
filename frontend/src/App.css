@@ -3,6 +3,17 @@
   overflow-x: hidden;
 }
 
+.Login-Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
 .Header-Container {
   display: flex;
   flex-direction: column;
@@ -72,4 +83,108 @@
 .Wrapper-Content {
   margin-top: 90px;
   padding: 10px;
+}
+
+.Login-Heading-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Login-Heading-Container h1 {
+  font-family: Helvetica neue;
+  font-size: 2.7em;
+  font-weight: 400;
+}
+
+.Login-Inputs-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  max-width: 430px;
+  padding: 0px 25px;
+}
+
+.Login-Inputs-Container input {
+  border: black 2px solid;
+  padding: 9px 5px;
+  border-radius: 8px;
+  width: 100%;
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.21);
+}
+
+.Login-Btn-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 430px;
+  padding: 0px 25px;
+  gap: 7px;
+}
+
+.Login-Btn-Container div {
+  display: flex;
+  justify-content: center;
+}
+
+.Login-Btn-Container div button {
+  width: 100%;
+  border-radius: 8px;
+  border-style: solid;
+  border: black 2px solid;
+  background-color: black;
+  padding: 10px 6px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.28);
+  font-family: monospace;
+}
+
+.Login-Btn-Container div p {
+  font-family: monospace;
+  font-weight: 600;
+  border: black 2px solid;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.21);
+  cursor: pointer;
+}
+
+.Message-Box {
+  display: flex;
+  justify-content: center;
+}
+
+.Message-Box p {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.Hide {
+  display: none;
+}
+
+:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+::selection {
+  background-color: black;
+  color: white;
 }
